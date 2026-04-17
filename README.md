@@ -6,7 +6,7 @@
 **License:** [MIT](LICENSE)
 
 **Quick Links:**
-- [Press Release](press_release.md)
+- [Press Release](press_release/press_release.md)
 - [Pipeline Notebook](pipeline.ipynb)
 - [Pipeline (Markdown)](pipeline.md)
 
