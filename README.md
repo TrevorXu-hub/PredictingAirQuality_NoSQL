@@ -2,7 +2,7 @@
 
 **Name:** Trevor Xu
 **NetID:** pxg6af
-**DOI:** [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX) *(update after Zenodo upload)*
+**DOI:** [10.5281/zenodo.19634674](https://doi.org/10.5281/zenodo.19634674) *(update after Zenodo upload)*
 **License:** [MIT](LICENSE)
 
 **Quick Links:**
