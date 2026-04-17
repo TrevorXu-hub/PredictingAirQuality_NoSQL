@@ -69,10 +69,10 @@ All supporting articles are stored in the [`background_reading/`](background_rea
 
 | Title | Description | File |
 |-------|-------------|------|
-| EPA AQI Technical Assistance Document | Official EPA documentation of AQI calculation methodology and category breakpoints | [background_reading/epa_aqi_technical_doc.pdf](background_reading/) |
-| Health Effects of PM2.5 (EPA) | Summary of peer-reviewed evidence linking PM2.5 to cardiovascular and respiratory disease | [background_reading/pm25_health_effects.pdf](background_reading/atmosphere-12-01449-v3 (1).pdf) |
+| EPA AQI Technical Assistance Document | Official EPA documentation of AQI calculation methodology and category breakpoints | [background_reading/epa_aqi_technical_doc.pdf](background_reading/epa_aqi_technical_doc.pdf) |
+| Health Effects of PM2.5 (EPA) | Summary of peer-reviewed evidence linking PM2.5 to cardiovascular and respiratory disease | [background_reading/pm25_health_effects.pdf](background_reading/pm25_health_effects.pdf) |
 | AQS Data Dictionary | Column-level documentation for all EPA AQS bulk download files | [background_reading/aqs_data_dictionary.pdf](background_reading/aqs_data_dictionary.pdf) |
-| WHO Global Air Quality Guidelines 2021 | International benchmark PM2.5 exposure guidelines and their health rationale | [background_reading/who_air_quality_guidelines.pdf](background_reading/9789240034228-eng.pdf) |
+| WHO Global Air Quality Guidelines 2021 | International benchmark PM2.5 exposure guidelines and their health rationale | [background_reading/who_air_quality_guidelines.pdf](background_reading/who_air_quality_guidelines.pdf) |
 | Machine Learning for Air Quality Prediction (Review) | Survey of ML approaches applied to AQI forecasting across recent literature | [background_reading/ml_air_quality_review.pdf](background_reading/ml_air_quality_review.pdf) |
 
 ---
