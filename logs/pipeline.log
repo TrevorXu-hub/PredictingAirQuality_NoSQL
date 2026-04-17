@@ -1,0 +1,27 @@
+2026-04-17 15:56:06,592 [INFO] Pipeline started — imports and logging ready.
+2026-04-17 16:00:56,242 [INFO] Connected to MongoDB Atlas.
+2026-04-17 16:00:56,243 [INFO] Querying MongoDB collection...
+2026-04-17 16:00:57,627 [INFO] Retrieved 96242 documents from MongoDB.
+2026-04-17 16:00:58,343 [INFO] Dropped 0 rows with missing target/features. Remaining: 96242
+2026-04-17 16:01:08,441 [INFO] Generating data summary.
+2026-04-17 16:01:15,091 [INFO] Engineering features...
+2026-04-17 16:01:15,409 [INFO] Feature engineering complete. Dropped 672 rows lacking lag/rolling data. Remaining: 95570
+2026-04-17 16:01:20,909 [INFO] Class distribution in target:
+aqi_category
+Good                              72640
+Moderate                          22169
+Unhealthy for Sensitive Groups      394
+Unhealthy                           267
+Very Unhealthy                       94
+Hazardous                             6
+2026-04-17 16:01:20,996 [INFO] Train size: 76456 | Test size: 19114
+2026-04-17 16:01:20,998 [INFO] Training Random Forest...
+2026-04-17 16:01:33,013 [INFO] Training complete.
+2026-04-17 16:01:33,315 [INFO] Test accuracy: 0.7939
+2026-04-17 16:01:33,337 [INFO] Plotting confusion matrix.
+2026-04-17 16:01:33,915 [INFO] Saved confusion_matrix.png
+2026-04-17 16:01:37,698 [INFO] Plotting feature importance.
+2026-04-17 16:01:38,035 [INFO] Saved feature_importance.png
+2026-04-17 16:01:42,133 [INFO] Plotting PM2.5 distribution by state.
+2026-04-17 16:01:43,737 [INFO] Saved pm25_by_state.png
+2026-04-17 16:01:52,883 [INFO] Pipeline complete. Figures saved: confusion_matrix.png, feature_importance.png, pm25_by_state.png
