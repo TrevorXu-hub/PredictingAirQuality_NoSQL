@@ -6,9 +6,9 @@
 **License:** [MIT](LICENSE)
 
 **Quick Links:**
-- [Press Release](press_release.md)
-- [Pipeline Notebook](pipeline.ipynb)
-- [Pipeline (Markdown)](pipeline.md)
+- [Press Release](press_release/press_release.md)
+- [Pipeline Notebook](pipeline/pipeline.ipynb)
+- [Pipeline (Markdown)](pipeline/pipeline.md)
 
 ---
 
@@ -33,7 +33,7 @@ Air pollution is one of the leading environmental causes of premature death glob
 The general problem of "predicting air quality" is deliberately broad and could encompass dozens of pollutants, geographic scales, and time horizons. This project narrows the focus to PM2.5 specifically because it is the pollutant most consistently linked to adverse health outcomes and the primary driver of the U.S. AQI on most days. Predicting AQI *category* rather than a raw concentration value makes the output directly actionable for end users who rely on the color-coded AQI scale. Limiting the feature set to historical measurements and temporal variables keeps the data pipeline reproducible and fully grounded in the EPA AQS secondary dataset.
 
 ### Press Release
-[Most Americans Don't Know Their Air Will Be Unhealthy Tomorrow. A New Machine Learning Tool Can Change That.](press_release.md)
+[Most Americans Don't Know Their Air Will Be Unhealthy Tomorrow. A New Machine Learning Tool Can Change That.](press_release/press_release.md)
 
 ---
 
@@ -69,10 +69,10 @@ All supporting articles are stored in the [`background_reading/`](background_rea
 
 | Title | Description | File |
 |-------|-------------|------|
-| EPA AQI Technical Assistance Document | Official EPA documentation of AQI calculation methodology and category breakpoints | [background_reading/epa_aqi_technical_doc.pdf](background_reading/epa_aqi_technical_doc.pdf) |
-| Health Effects of PM2.5 (EPA) | Summary of peer-reviewed evidence linking PM2.5 to cardiovascular and respiratory disease | [background_reading/pm25_health_effects.pdf](background_reading/pm25_health_effects.pdf) |
+| EPA AQI Technical Assistance Document | Official EPA documentation of AQI calculation methodology and category breakpoints | [background_reading/epa_aqi_technical_doc.pdf](background_reading/) |
+| Health Effects of PM2.5 (EPA) | Summary of peer-reviewed evidence linking PM2.5 to cardiovascular and respiratory disease | [background_reading/pm25_health_effects.pdf](background_reading/atmosphere-12-01449-v3 (1).pdf) |
 | AQS Data Dictionary | Column-level documentation for all EPA AQS bulk download files | [background_reading/aqs_data_dictionary.pdf](background_reading/aqs_data_dictionary.pdf) |
-| WHO Global Air Quality Guidelines 2021 | International benchmark PM2.5 exposure guidelines and their health rationale | [background_reading/who_air_quality_guidelines.pdf](background_reading/who_air_quality_guidelines.pdf) |
+| WHO Global Air Quality Guidelines 2021 | International benchmark PM2.5 exposure guidelines and their health rationale | [background_reading/who_air_quality_guidelines.pdf](background_reading/9789240034228-eng.pdf) |
 | Machine Learning for Air Quality Prediction (Review) | Survey of ML approaches applied to AQI forecasting across recent literature | [background_reading/ml_air_quality_review.pdf](background_reading/ml_air_quality_review.pdf) |
 
 ---
@@ -88,9 +88,9 @@ Data was ingested using the custom Python script `ingestion.py`, which reads the
 
 | File | Description |
 |------|-------------|
-| [`ingestion.py`](ingestion.py) | Reads local EPA CSV, cleans outliers, and upserts documents into MongoDB Atlas with full logging |
-| [`pipeline.ipynb`](pipeline.ipynb) | End-to-end analysis pipeline: MongoDB query → feature engineering → Random Forest → visualizations |
-| [`pipeline.md`](pipeline.md) | Markdown export of the pipeline notebook for easy viewing on GitHub |
+| [`ingestion.py`](ingestion/ingestion.py) | Reads local EPA CSV, cleans outliers, and upserts documents into MongoDB Atlas with full logging |
+| [`pipeline.ipynb`](pipeline.pipeline.ipynb) | End-to-end analysis pipeline: MongoDB query → feature engineering → Random Forest → visualizations |
+| [`pipeline.md`](pipeline/pipeline.md) | Markdown export of the pipeline notebook for easy viewing on GitHub |
 | [`requirements.txt`](requirements.txt) | Python package dependencies |
 
 ### Critical Decisions and Uncertainty
