@@ -158,7 +158,7 @@ Every document in the `pm25_daily` collection follows the structure below. All t
 ```
 
 **Schema rules enforced during ingestion:**
-- A compound unique index on `(date, location.site_id)` prevents duplicate daily readings for the same monitoring site.
+- Documents missing pm25_mean or date are dropped before insertion.
 - PM2.5 mean values must be non-negative; AQI values must not exceed 500 (EPA scale maximum).
 - Documents missing `pm25_mean` or `date` are rejected — these are the minimum fields required for downstream analysis.
 - Timestamps are stored in UTC to avoid timezone ambiguity across states.
