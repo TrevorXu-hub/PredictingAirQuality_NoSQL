@@ -2,7 +2,7 @@
 
 **Name:** Trevor Xu
 **NetID:** pxg6af
-**DOI:** [10.5281/zenodo.19634674](https://doi.org/10.5281/zenodo.19634674) *(update after Zenodo upload)*
+**DOI:** [10.5281/zenodo.19634674](https://doi.org/10.5281/zenodo.19634674)
 **License:** [MIT](LICENSE)
 
 **Quick Links:**
@@ -89,7 +89,7 @@ Data was ingested using the custom Python script `ingestion.py`, which reads the
 | File | Description |
 |------|-------------|
 | [`ingestion.py`](ingestion/ingestion.py) | Reads local EPA CSV, cleans outliers, and upserts documents into MongoDB Atlas with full logging |
-| [`pipeline.ipynb`](pipeline.pipeline.ipynb) | End-to-end analysis pipeline: MongoDB query → feature engineering → Random Forest → visualizations |
+| [`pipeline.ipynb`](pipeline/pipeline.ipynb) | End-to-end analysis pipeline: MongoDB query → feature engineering → Random Forest → visualizations |
 | [`pipeline.md`](pipeline/pipeline.md) | Markdown export of the pipeline notebook for easy viewing on GitHub |
 | [`requirements.txt`](requirements.txt) | Python package dependencies |
 
@@ -174,7 +174,7 @@ Every document in the `pm25_daily` collection follows the structure below. All t
 | States included | CA, TX, NY, IL, AZ, CO, WA, FL, OR, ID |
 | Raw rows in source CSV | 176,246 |
 | Rows removed (cleaning) | 363 (negative PM2.5 + AQI > 500) |
-| Documents after cleaning | ~95,000 *(update with actual count from MongoDB)* |
+| Documents after cleaning | 192k|
 | Date range | 2023-01-01 – 2023-12-31 |
 | Unique cities | 224 |
 | Approximate monitoring sites | 500+ |
