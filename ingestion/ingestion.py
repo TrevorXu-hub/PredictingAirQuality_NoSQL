@@ -31,8 +31,8 @@ def get_category(aqi):
     return "Hazardous"
 
 
-USERNAME  = quote_plus('')
-PASSWORD  = quote_plus('')
+USERNAME  = quote_plus('YOUR_USERNAME')
+PASSWORD  = quote_plus('YOUR_PASSWORD')
 MONGO_URI = f'mongodb+srv://{USERNAME}:{PASSWORD}@nosqlfinalproject.vkq6zwb.mongodb.net/?appName=NoSQLFinalProject'
 CSV_FILE  = "daily_88502_2023.csv"
 
